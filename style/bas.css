@@ -1,0 +1,20 @@
+body{
+	margin:0px;
+ 	background: #FBFBFB; font-family: "futura-pt", Arial, sans-serif; font-size: 13px; font-weight: 500;
+ 	border-top:6px solid #A71E26
+}
+table.resultTable{
+	text-align:center;
+}
+table.resultTable td{
+	margin:3px;
+	padding:3px;
+}
+div.container{
+	width :960px;
+	margin:0 auto;
+}
+.heavy{
+	font-weight:bold;
+	text-transform:uppercase;
+}

@@ -1,14 +1,24 @@
 <!Doctype html>
 <meta charset="utf-8">
-<head>Ninging's Space</head>
+<link rel="stylesheet" href="style/bas.css"></link>
 <body>
-	<h4>Welcome to my Space</h4>
+	<div class="container">
+		<h4>Welcome to my Space</h4>
+	</div>
 </body>
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <script>
 	$(document).ready(function(){
-		$.get('assets/results.json',function(d){
-			console.log(d);
-		});	
+		$.ajax({
+			url : "table.html",	
+			success : function(d){
+					$('body').append(d);	
+					var table = $('body').find('table');
+					table.addClass('resultTable');
+					table.find('tr:first').addClass('heavy');
+
+				}
+			}
+		)
 	});
 </script>
