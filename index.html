@@ -2,5 +2,13 @@
 <meta charset="utf-8">
 <head>Ninging's Space</head>
 <body>
-	<h4>Welcome to my Spcae</h4>
+	<h4>Welcome to my Space</h4>
 </body>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$.get('assets/results.json',function(d){
+			console.log(d);
+		});	
+	});
+</script>
